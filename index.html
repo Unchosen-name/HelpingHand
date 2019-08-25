@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Helping Hand Login</title>
+    <link rel = "stylesheet"
+   type = "text/css"
+   href = "./LoginPage.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+
+</head>
+<style>
+
+header h1 {
+    color: white;
+    margin-top: 15px;
+}
+
+h3, p {
+    color: white;
+}
+
+body {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body button {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration-color: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+
+}
+
+#grad{
+    background-color: lightblue;
+    background-image: linear-gradient(to bottom right, lightblue, blue);
+
+}
+h2{
+    color: white;
+}
+</style>
+
+    <body id="grad">  
+        <header>
+        <h1>Helping Hand</h1><br>
+        </header>
+        <input placeholder="Username" type = "email" id = "textBar"/><br>
+        <input placeholder="Password" type = "password" id = "passwordBar" style = " resize: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+            height: 15%;"/>
+        
+        <a><button id = "logInButton" onclick = "login()">Log in</button></a>
+        <a href = "./CreateAccount.html"><button id = "logInButton">Create Account</button></a>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+<script src = "login.js"></script>
+    </body>
+</html>
